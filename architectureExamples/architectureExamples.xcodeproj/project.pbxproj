@@ -13,6 +13,9 @@
 		89064EC620BC3068004DF881 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89064EC520BC3068004DF881 /* Assets.xcassets */; };
 		89064EC920BC3068004DF881 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89064EC720BC3068004DF881 /* LaunchScreen.storyboard */; };
 		89064ECC20BC3068004DF881 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 89064ECB20BC3068004DF881 /* main.m */; };
+		89064ED520BC33ED004DF881 /* UIView+frameView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89064ED420BC33ED004DF881 /* UIView+frameView.m */; };
+		89064ED920BC3CEA004DF881 /* TYBaseClassView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89064ED820BC3CEA004DF881 /* TYBaseClassView.m */; };
+		89064EDC20BC3E3C004DF881 /* TYSpecificUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89064EDB20BC3E3C004DF881 /* TYSpecificUIView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		89064EC820BC3068004DF881 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89064ECA20BC3068004DF881 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		89064ECB20BC3068004DF881 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		89064ED320BC33ED004DF881 /* UIView+frameView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+frameView.h"; sourceTree = "<group>"; };
+		89064ED420BC33ED004DF881 /* UIView+frameView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+frameView.m"; sourceTree = "<group>"; };
+		89064ED720BC3CEA004DF881 /* TYBaseClassView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYBaseClassView.h; sourceTree = "<group>"; };
+		89064ED820BC3CEA004DF881 /* TYBaseClassView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYBaseClassView.m; sourceTree = "<group>"; };
+		89064EDA20BC3E3C004DF881 /* TYSpecificUIView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYSpecificUIView.h; sourceTree = "<group>"; };
+		89064EDB20BC3E3C004DF881 /* TYSpecificUIView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYSpecificUIView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +71,8 @@
 				89064EBA20BC3068004DF881 /* AppDelegate.m */,
 				89064EBC20BC3068004DF881 /* ViewController.h */,
 				89064EBD20BC3068004DF881 /* ViewController.m */,
+				89064ED620BC3C09004DF881 /* architectureView */,
+				89064ED220BC33B8004DF881 /* layoutView */,
 				89064EC520BC3068004DF881 /* Assets.xcassets */,
 				89064EC720BC3068004DF881 /* LaunchScreen.storyboard */,
 				89064ECA20BC3068004DF881 /* Info.plist */,
@@ -69,6 +80,26 @@
 				89064EC220BC3068004DF881 /* architectureExamples.xcdatamodeld */,
 			);
 			path = architectureExamples;
+			sourceTree = "<group>";
+		};
+		89064ED220BC33B8004DF881 /* layoutView */ = {
+			isa = PBXGroup;
+			children = (
+				89064ED320BC33ED004DF881 /* UIView+frameView.h */,
+				89064ED420BC33ED004DF881 /* UIView+frameView.m */,
+			);
+			path = layoutView;
+			sourceTree = "<group>";
+		};
+		89064ED620BC3C09004DF881 /* architectureView */ = {
+			isa = PBXGroup;
+			children = (
+				89064ED720BC3CEA004DF881 /* TYBaseClassView.h */,
+				89064ED820BC3CEA004DF881 /* TYBaseClassView.m */,
+				89064EDA20BC3E3C004DF881 /* TYSpecificUIView.h */,
+				89064EDB20BC3E3C004DF881 /* TYSpecificUIView.m */,
+			);
+			path = architectureView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,10 +172,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89064EDC20BC3E3C004DF881 /* TYSpecificUIView.m in Sources */,
+				89064ED520BC33ED004DF881 /* UIView+frameView.m in Sources */,
 				89064EBE20BC3068004DF881 /* ViewController.m in Sources */,
 				89064EC420BC3068004DF881 /* architectureExamples.xcdatamodeld in Sources */,
 				89064ECC20BC3068004DF881 /* main.m in Sources */,
 				89064EBB20BC3068004DF881 /* AppDelegate.m in Sources */,
+				89064ED920BC3CEA004DF881 /* TYBaseClassView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
